@@ -14,8 +14,27 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< Updated upstream:Hotel/Hotel/urls.py
 from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+=======
+from django.urls import path, include
+from home import views
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.index, name='home'),
+    path('/home/', views.index, name='homepage'),
+    path('/dan_inn/', views.dan_inn, name='dan_inn'),
+    path('/ventania/', views.ventania, name='ventania'),
+    path('/panela_velha/', views.panela_velha, name='panela_velha'),
+    path('/sobre_nos/', views.sobre_nos, name='sobre_nos'),
+    path('/contato/', views.contato, name='contato'),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+>>>>>>> Stashed changes:Hotel/urls.py

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Additional locations of static files
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    '/static/css/bootstrap.min.css',
+    '/static/css/datepicker.css',
+    '/static/css/tooplate.css',
+    '/static/font-awesome-4.7.0/css/font-awesome.min.css',
+    '/static/slick/slick.css',
+    '/static/slick/slick-theme.css',
+)
 
 # Application definition
 
