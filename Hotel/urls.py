@@ -28,4 +28,4 @@ urlpatterns = [
     path('/panela_velha/', views.panela_velha, name='panela_velha'),
     path('/sobre_nos/', views.sobre_nos, name='sobre_nos'),
     path('/contato/', views.contato, name='contato'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]

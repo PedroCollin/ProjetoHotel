@@ -4,13 +4,17 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="../../../Hotel/static/font-awesome-4.7.0/css/font-awesome.css">                <!-- Font Awesome -->
-    <link rel="stylesheet" href="../../../Hotel/static/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" type="text/css" href="../../../Hotel/static/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../Hotel/static/slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="../../../Hotel/static/css/datepicker.css"/>
-    <link rel="stylesheet" href="../../../Hotel/static/css/tooplate-style.css">
+
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.css' %}">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tooplate-style.css' %}">
+
+
     <title>Hoteis</title>
 
     <!-- load stylesheets -->
@@ -360,12 +364,12 @@
         </div>
 
         <!-- load JS files -->
-        <script src="../../../Hotel/static/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="../../../Hotel/static/js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->
-        <script src="../../../Hotel/static/js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
-        <script src="../../../Hotel/static/js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
-        <script src="../../../Hotel/static/js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-        <script src="../../../Hotel/static/slick/slick.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+        <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="{% static 'js/popper.min.js' %}"></script>                    <!-- https://popper.js.org/ -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="{% static 'js/datepicker.min.js' %}"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="{% static 'js/jquery.singlePageNav.min.js' %}"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="{% static 'slick/slick.js' %}"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
         <script>
 
             /* Google map
