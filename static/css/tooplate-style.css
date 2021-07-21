@@ -132,10 +132,14 @@ p {
 	height: 515px;
 }
 
-#tm-section-5 { background-image: url('../../static/img/bg-img-2.jpg'); }
+#tm-section-5 { background-image: url('../../static/img/bg-img-2.jpg');   -webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);}
 
 #tm-section-6 {
-	background-image: url('../../static/img/bg-img-3.jpg');
+	background-image: url('../../static/imgbg-img-3.jpg');
 	background-position: top center;
 	padding-top: 120px;
 	padding-bottom: 60px;
