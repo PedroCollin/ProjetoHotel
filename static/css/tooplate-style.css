@@ -13,6 +13,21 @@ body {
 	overflow-x: hidden;
 }
 
+.navbar {
+	padding-top: 0% !important;
+}
+
+.btn-primary {
+    background-color: #ee5057 !important;
+    border-color: #ee5057 !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    padding: 13px 30px !important;
+    text-transform: uppercase !important;
+}
+
 a, button { transition: all 0.3s ease; }
 a:hover,
 a:focus {
@@ -128,15 +143,14 @@ p {
 }
 
 #tm-section-1 {	
-	background-image: url('../../static/img/bg-img-1.jpg');	
+	background-image: url('../img/bg-img-1.jpg');	
 	height: 515px;
 }
 
-#tm-section-5 { background-image: url('../../static/img/bg-img-2.jpg');
-}
+#tm-section-5 { background-image: url('../img/bg-img-2.jpg'); }
 
 #tm-section-6 {
-	background-image: url('../../static/imgbg-img-3.jpg');
+	background-image: url('../img/bg-img-3.jpg');
 	background-position: top center;
 	padding-top: 120px;
 	padding-bottom: 60px;

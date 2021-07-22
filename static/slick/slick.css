@@ -1,4 +1,10 @@
 /* Slider */
+
+
+element.style {
+    width: 357px !important;
+}
+
 .slick-slider
 {
     position: relative;
